@@ -1,0 +1,22 @@
+!!!5
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{name: :viewport}
+
+    - if content_for?(:head)
+      = yield_content(:head)
+
+    %title
+      - if content_for?(:title)
+        = yield_content(:title)
+
+    = stylesheet_link_tag 'site'
+    = javascript_include_tag 'site'
+
+    :javascript
+      console.info('Last updated at #{Time.now.strftime("%m/%d/%Y %H:%M")}')
+
+
+  %body
+    = yield
