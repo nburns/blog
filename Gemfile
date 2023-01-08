@@ -5,5 +5,6 @@ gem 'middleman-autoprefixer'
 gem 'middleman-livereload'
 gem 'middleman-blog'
 gem 'nokogiri' # required for summaries
-
-gem "pry", "~> 0.14.1"
+gem "pry"
+gem 'builder'
+gem 'redcarpet'

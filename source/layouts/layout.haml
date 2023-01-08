@@ -26,8 +26,20 @@
         %ul.nav
           %li
             %a{rel: :me, href: 'https://file-explorers.club/@bricklearns'}
-              🐘
+              🐘 mastodon
+          %li
+            %a{href: '/feed.xml'}
+              ⚛️ feed
 
+    - if is_blog_article?
+      - # https://rubydoc.info/github/middleman/middleman-blog/master/Middleman/Blog/Helpers
+      %h1
+        = current_article.title.titlecase
+      %h2
+        = current_article.tags
+      %h3
+        = current_article.date
 
+    = blog.tags
 
     = yield

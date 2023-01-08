@@ -1,5 +1,5 @@
 watch:
-	bundle exec middleman
+	watchexec -w . -- bundle exec middleman
 
 publish:
 	bundle exec middleman build

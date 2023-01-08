@@ -2,7 +2,7 @@
 
 title: makita bit holders
 date: 2023-01-08 00:05
-tags: 3d-print tools
+tags: 3dprint, tools, meta-tools, makita
 
 ---
 After seeing the price of a addon bit holder for makita tools I figured I could
