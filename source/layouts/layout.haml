@@ -19,4 +19,15 @@
 
 
   %body
+    - unless content_for?(:header)
+      %div.header
+        %h1
+          Nick's Blog
+        %ul.nav
+          %li
+            %a{rel: :me, href: 'https://file-explorers.club/@bricklearns'}
+              🐘
+
+
+
     = yield

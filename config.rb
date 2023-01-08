@@ -1,5 +1,8 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+#
+Time.zone = "America/Los_Angeles"
+
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
