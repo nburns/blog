@@ -7,3 +7,6 @@ publish:
 	git commit -a
 	git push origin main
 
+new:
+	@read -p "article:" ARTICLE \
+  	&& bundle exec middleman article "$${ARTICLE}"

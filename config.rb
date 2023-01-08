@@ -16,3 +16,6 @@ configure :build do
   set :relative_links, true
   activate :relative_assets
 end
+
+activate :blog do |blog|
+end
