@@ -1,8 +1,15 @@
 %a{rel: :me, href: 'https://file-explorers.club/@bricklearns'}
   🐘
 %h1
-  Hello World
-  foo
+  Nick's Blog
 
 - blog.articles.each do |article|
-  = article.title
+  %article
+    %h2
+      %a{href: article.url}
+        =article.title
+      %time
+        =article.date.strftime('%b %e %Y')
+
+    %p
+      =article.summary
