@@ -1,0 +1,19 @@
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  margin: 0; }
+
+.header {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 0.5em; }
+  .header h1 {
+    text-align: center; }
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; }
+  .nav a {
+    text-decoration: none; }
