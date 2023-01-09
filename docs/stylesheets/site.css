@@ -5,15 +5,36 @@ body {
   margin: 0; }
 
 .header {
-  background-color: DodgerBlue;
+  background: #00d3ff;
+  background: -webkit-gradient(linear, left top, right top, from(#00d3ff), to(#0056ff));
+  background: linear-gradient(90deg, #00d3ff 0%, #0056ff 100%);
   color: white;
   padding: 0.5em; }
   .header h1 {
     text-align: center; }
+  .header a {
+    color: inherit;
+    text-decoration: inherit; }
 
 .nav {
   list-style: none;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
   .nav a {
     text-decoration: none; }
+
+.tag {
+  margin: 0.5em;
+  border: 2px solid DodgerBlue;
+  border-radius: 5px;
+  background-color: LightBlue;
+  color: inherit;
+  text-decoration: inherit; }
+
+article {
+  margin-left: 10%;
+  margin-right: 10%; }
+  article h1 time {
+    margin-left: 4em;
+    font-size: 0.3em;
+    color: #555; }

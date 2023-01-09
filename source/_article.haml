@@ -1,0 +1,11 @@
+- # https://rubydoc.info/github/middleman/middleman-blog/master/Middleman/Blog/Helpers
+%article
+  %h1
+    = article.title.titlecase
+    %time{datetime: article.date.iso8601}
+      = article.date.strftime("%a %b %e, %Y")
+
+  - if defined? is_summary && is_summary
+    = article.summary
+  - else
+    = article.body

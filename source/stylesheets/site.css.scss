@@ -9,7 +9,9 @@ body {
 }
 
 .header {
-  background-color: DodgerBlue;
+  background: rgb(0,211,255);
+  background: linear-gradient(90deg, rgb(0,211,255) 0%, rgb(0,86,255) 100%);
+
   color: white;
 
   padding: 0.5em;
@@ -17,14 +19,41 @@ body {
   h1 {
     text-align: center;
   }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 }
 
 .nav {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   a {
     text-decoration: none;
+  }
+}
+
+.tag {
+  margin: 0.5em;
+  border: 2px solid DodgerBlue;
+  border-radius: 5px;
+  background-color: LightBlue;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+article {
+  margin-left: 10%;
+  margin-right: 10%;
+
+  h1 {
+    time {
+      margin-left: 4em;
+      font-size: 0.3em;
+      color: #555;
+    }
   }
 }

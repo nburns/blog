@@ -22,24 +22,19 @@
     - unless content_for?(:header)
       %div.header
         %h1
-          Nick's Blog
+          %a{href: '/'}
+            Nick's Blog
         %ul.nav
           %li
             %a{rel: :me, href: 'https://file-explorers.club/@bricklearns'}
               🐘 mastodon
+
           %li
             %a{href: '/feed.xml'}
-              ⚛️ feed
+              %img{src: '/images/rss.svg'}
+              subscribe
 
     - if is_blog_article?
-      - # https://rubydoc.info/github/middleman/middleman-blog/master/Middleman/Blog/Helpers
-      %h1
-        = current_article.title.titlecase
-      %h2
-        = current_article.tags
-      %h3
-        = current_article.date
-
-    = blog.tags
-
-    = yield
+      = render '', '_article', {}, {article: current_article}
+    - else
+      = yield
