@@ -1,5 +1,5 @@
 body {
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -8,9 +8,20 @@ body {
   margin: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background-color: #222;
+  }
+
+  div.header {
+    background: linear-gradient(0deg, rgb(2,10,60) 0%, rgb(0,0,0) 100%);
+  }
+
+}
+
 .header {
-  background: rgb(0,211,255);
-  background: linear-gradient(90deg, rgb(0,211,255) 0%, rgb(0,86,255) 100%);
+  background: linear-gradient(0deg, rgb(20,100,255) 0%, rgb(0,0,30) 100%);
 
   color: white;
 
@@ -49,11 +60,28 @@ article {
   margin-left: 10%;
   margin-right: 10%;
 
+  time {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 1em;
+  }
+
   h1 {
-    time {
-      margin-left: 4em;
-      font-size: 0.3em;
-      color: #555;
+    a {
+      color: white;
+      text-decoration: none;
     }
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 66%;
+  }
+  model-viewer {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 66%;
   }
 }

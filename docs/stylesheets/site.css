@@ -1,13 +1,20 @@
 body {
-  background-color: #FFF;
+  background-color: #fff;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   margin: 0; }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background-color: #222; }
+  div.header {
+    background: -webkit-gradient(linear, left bottom, left top, from(#020a3c), to(black));
+    background: linear-gradient(0deg, #020a3c 0%, black 100%); } }
+
 .header {
-  background: #00d3ff;
-  background: -webkit-gradient(linear, left top, right top, from(#00d3ff), to(#0056ff));
-  background: linear-gradient(90deg, #00d3ff 0%, #0056ff 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1464ff), to(#00001e));
+  background: linear-gradient(0deg, #1464ff 0%, #00001e 100%);
   color: white;
   padding: 0.5em; }
   .header h1 {
@@ -34,7 +41,20 @@ body {
 article {
   margin-left: 10%;
   margin-right: 10%; }
-  article h1 time {
-    margin-left: 4em;
-    font-size: 0.3em;
-    color: #555; }
+  article time {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 1em; }
+  article h1 a {
+    color: white;
+    text-decoration: none; }
+  article img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 66%; }
+  article model-viewer {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 66%; }

@@ -24,6 +24,7 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
   blog.layout = :layout
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
 end
 
 page '/*.xml', layout: false

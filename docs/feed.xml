@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Nick's Blog</title>
+  <title>Nick Burns</title>
   <subtitle></subtitle>
   <id>http://blog.nick.burns.io/</id>
   <link href="http://blog.nick.burns.io/"/>
   <link href="http://blog.nick.burns.io/feed.xml" rel="self"/>
-  <updated>2023-01-08T00:05:00-08:00</updated>
+  <updated>2023-04-19T08:35:00-07:00</updated>
   <author>
     <name>Nick Burns</name>
   </author>
   <entry>
     <title>makita bit holders</title>
-    <link rel="alternate" href="http://blog.nick.burns.io/2023/01/08/makita-bit-holders.html"/>
-    <id>http://blog.nick.burns.io/2023/01/08/makita-bit-holders.html</id>
-    <published>2023-01-08T00:05:00-08:00</published>
-    <updated>2023-01-08T16:34:40-08:00</updated>
+    <link rel="alternate" href="http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html"/>
+    <id>http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html</id>
+    <published>2023-04-19T08:35:00-07:00</published>
+    <updated>2023-04-19T21:40:38-07:00</updated>
     <author>
       <name>Nick Burns</name>
     </author>
-    <summary type="html">&lt;p&gt;After seeing the price of a addon bit holder for makita tools I figured I could
-design and print my own.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;As someone who does a lot of DIY work around the house, I found that my drill bits were constantly getting lost or misplaced. I needed a way to keep them organized and easily accessible. After seeing the price of commercially available ones I thought...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;As someone who does a lot of DIY work around the house, I found that my drill bits were constantly getting lost or misplaced. I needed a way to keep them organized and easily accessible. After seeing the price of commercially available ones I thought I could design something similar and print it on my 3D printer.&lt;/p&gt;
 
-&lt;p&gt;Design pic&lt;/p&gt;
+&lt;p&gt;I started by sketching out some ideas on paper, and making note of the dimensions of the bit shanks and magnets, I then moved on to designing the holder using CAD software. I wanted to make sure that the holder would fit enough of my drill bits and be sturdy enough. &lt;a href="/2023/04/19/makita-bit-holders/bit-holder.stl"&gt;Download the STL&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;pic of finished&lt;/p&gt;
+&lt;script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"&gt;&lt;/script&gt;
 
-&lt;p&gt;Assembly instructions&lt;/p&gt;
+&lt;model-viewer src="/2023/04/19/makita-bit-holders/bit-holder.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y"&gt;
+&lt;/model-viewer&gt;
 
-&lt;p&gt;link to stl&lt;/p&gt;
+&lt;script&gt;
+const modelViewerParameters = document.querySelector("model-viewer");
 
-</summary>
-    <content type="html">&lt;p&gt;After seeing the price of a addon bit holder for makita tools I figured I could
-design and print my own.&lt;/p&gt;
+modelViewerParameters.addEventListener("load", (ev) =&gt; {
+  let material = modelViewerParameters.model.materials[0];
+  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.5, 1]);
+});
+&lt;/script&gt;
 
-&lt;p&gt;Design pic&lt;/p&gt;
+&lt;p&gt;Once I had the design finalized, I exported the file and sent it to my 3D printer. I used a nice blue PLA filament, and printed it vertically so it wouldn't need supports (although it makes it less strong). I'll reassess if I manage to break it.&lt;/p&gt;
 
-&lt;p&gt;pic of finished&lt;/p&gt;
+&lt;p&gt;After a short print, my holder was complete. I was thrilled with how it turned out. The holder is compact and mounts to the extra hook mount on my drill and driver. The holes were a bit tight, so I chucked one in backwards and used it to ream the holes out before pressing in the magnets with my bench vise.&lt;/p&gt;
 
-&lt;p&gt;Assembly instructions&lt;/p&gt;
-
-&lt;p&gt;link to stl&lt;/p&gt;
+&lt;p&gt;&lt;img src="makita-bit-holders/finished.jpeg" alt="finished drill bit holder" /&gt;&lt;/p&gt;
 
 </content>
   </entry>
