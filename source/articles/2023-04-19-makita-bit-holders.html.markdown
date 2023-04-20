@@ -27,6 +27,6 @@ Once I had the design finalized, I exported the file and sent it to my 3D printe
 
 After a short print, my holder was complete. I was thrilled with how it turned out. The holder is compact and mounts to the extra hook mount on my drill and driver. The holes were a bit tight, so I chucked one in backwards and used it to ream the holes out before pressing in the magnets with my bench vise.
 
-![finished drill bit holder](2023-04-19-makita-bit-holders/finished.jpeg)
+![finished drill bit holder](/2023/04/19/makita-bit-holders/finished.jpeg)
 
 
