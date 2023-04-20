@@ -10,13 +10,18 @@ As someone who does a lot of DIY work around the house, I found that my drill bi
 I started by sketching out some ideas on paper, and making note of the dimensions of the bit shanks and magnets, I then moved on to designing the holder using CAD software. I wanted to make sure that the holder would fit enough of my drill bits and be sturdy enough. <a href="/2023/04/19/makita-bit-holders/bit-holder.stl">Download the STL here.</a>
 
 
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-<model-viewer src="/2023/04/19/makita-bit-holders/bit-holder.glb" shadow-intensity="1" camera-controls touch-action="pan-y">
+<script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+></script>
+<model-viewer
+    id="makita-bit-holder"
+    src="/2023/04/19/makita-bit-holders/bit-holder.glb"
+    shadow-intensity="1" camera-controls touch-action="pan-y">
 </model-viewer>
 
 <script>
-const modelViewerParameters = document.querySelector("model-viewer");
-
+const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
 modelViewerParameters.addEventListener("load", (ev) => {
   let material = modelViewerParameters.model.materials[0];
   material.pbrMetallicRoughness.setBaseColorFactor([0, 0.5, 1]);
@@ -27,4 +32,4 @@ Once I had the design finalized, I exported the file and sent it to my 3D printe
 
 After a short print, my holder was complete. I was thrilled with how it turned out. The holder is compact and mounts to the extra hook mount on my drill and driver. The holes were a bit tight, so I chucked one in backwards and used it to ream the holes out before pressing in the magnets with my bench vise.
 
-<img src="/2023/04/19/makita-bit-holders/finished.jpeg" alt="finished holder on drill">
+<img src="/2023/04/19/makita-bit-holders/finished.jpg" alt="finished holder on drill">

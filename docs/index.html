@@ -8,7 +8,7 @@
 <link href="stylesheets/site.css" rel="stylesheet" />
 <script src="javascripts/site.js"></script>
 <script>
-  console.info('Last updated at 04/19/2023 21:48')
+  console.info('Last updated at 04/19/2023 22:01')
 </script>
 </head>
 <body>
@@ -47,12 +47,11 @@ Wed Apr 19, 2023
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
-<model-viewer src="/2023/04/19/makita-bit-holders/bit-holder.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y">
+<model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y">
 </model-viewer>
 
 <script>
-const modelViewerParameters = document.querySelector("model-viewer");
-
+const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
 modelViewerParameters.addEventListener("load", (ev) => {
   let material = modelViewerParameters.model.materials[0];
   material.pbrMetallicRoughness.setBaseColorFactor([0, 0.5, 1]);
@@ -63,7 +62,7 @@ modelViewerParameters.addEventListener("load", (ev) => {
 
 <p>After a short print, my holder was complete. I was thrilled with how it turned out. The holder is compact and mounts to the extra hook mount on my drill and driver. The holes were a bit tight, so I chucked one in backwards and used it to ream the holes out before pressing in the magnets with my bench vise.</p>
 
-<p><img src="2023/04/19/makita-bit-holders/finished.jpeg" alt="finished holder on drill" /></p>
+<p><img src="2023/04/19/makita-bit-holders/finished.jpg" alt="finished holder on drill" /></p>
 
 </article>
 
