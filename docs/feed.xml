@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html"/>
     <id>http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html</id>
     <published>2023-04-19T08:35:00-07:00</published>
-    <updated>2023-04-20T13:48:52-07:00</updated>
+    <updated>2023-04-20T17:33:57-07:00</updated>
     <author>
       <name>Nick Burns</name>
     </author>
@@ -25,7 +25,7 @@
 
 &lt;script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"&gt;&lt;/script&gt;
 
-&lt;model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" shadow-intensity="1" camera-controls="" touch-action="pan-y"&gt;
+&lt;model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" environment-image="legacy" auto-rotate="" shadow-intensity="1" camera-controls="" touch-action="pan-y"&gt;
 &lt;/model-viewer&gt;
 
 &lt;script&gt;

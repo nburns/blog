@@ -17,6 +17,8 @@ I started by sketching out some ideas on paper, and making note of the dimension
 <model-viewer
     id="makita-bit-holder"
     src="/2023/04/19/makita-bit-holders/bit-holder.glb"
+    environment-image="legacy"
+    auto-rotate
     shadow-intensity="1" camera-controls touch-action="pan-y">
 </model-viewer>
 
