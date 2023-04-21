@@ -10,7 +10,9 @@ body {
     background-color: #222; }
   div.header {
     background: -webkit-gradient(linear, left bottom, left top, from(#020a3c), to(black));
-    background: linear-gradient(0deg, #020a3c 0%, black 100%); } }
+    background: linear-gradient(0deg, #020a3c 0%, black 100%); }
+  h1 a {
+    color: white; } }
 
 .header {
   background: -webkit-gradient(linear, left bottom, left top, from(#1464ff), to(#00001e));
@@ -46,7 +48,7 @@ article {
     color: #777;
     margin-bottom: 1em; }
   article h1 a {
-    color: white;
+    color: black;
     text-decoration: none; }
   article img {
     margin-left: auto;
