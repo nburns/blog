@@ -2,7 +2,7 @@ watch:
 	watchexec -w . -- bundle exec middleman --verbose
 
 publish:
-	bundle exec middleman build
+	bundle exec middleman build --verbose
 	git add .
 	git commit -a
 	git push origin main

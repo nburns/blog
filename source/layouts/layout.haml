@@ -14,6 +14,16 @@
     = stylesheet_link_tag 'site'
     = javascript_include_tag 'site'
 
+    - if is_blog_article?
+      %meta{property: 'og:type', content: :article}
+      %meta{property: 'og:title', content: current_article.title.titlecase}
+      %meta{property: 'og:description', content: current_article.summary}
+      %meta{property: 'og:image', content: URI.join(
+        "https://blog.nick.burns.io",
+        Nokogiri::HTML(current_article.body).at('img')&.attributes['src']&.value
+      )}
+
+
     :javascript
       console.info('Last updated at #{Time.now.strftime("%m/%d/%Y %H:%M")}')
 
