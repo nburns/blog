@@ -24,7 +24,7 @@ I started by sketching out some ideas on paper, and making note of the dimension
 const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
 modelViewerParameters.addEventListener("load", (ev) => {
   let material = modelViewerParameters.model.materials[0];
-  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.5, 1]);
+  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.3, 0.8]);
 });
 </script>
 

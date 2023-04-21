@@ -8,3 +8,4 @@ gem 'nokogiri' # required for summaries
 gem "pry"
 gem 'builder'
 gem 'redcarpet'
+gem 'pry-doc'

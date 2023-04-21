@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html"/>
     <id>http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html</id>
     <published>2023-04-19T08:35:00-07:00</published>
-    <updated>2023-04-19T22:00:41-07:00</updated>
+    <updated>2023-04-20T13:48:52-07:00</updated>
     <author>
       <name>Nick Burns</name>
     </author>
@@ -32,7 +32,7 @@
 const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
 modelViewerParameters.addEventListener("load", (ev) =&gt; {
   let material = modelViewerParameters.model.materials[0];
-  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.5, 1]);
+  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.3, 0.8]);
 });
 &lt;/script&gt;
 
