@@ -6,24 +6,26 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #fff;
-    background-color: #222; }
-  div.header {
-    background: -webkit-gradient(linear, left bottom, left top, from(#020a3c), to(black));
-    background: linear-gradient(0deg, #020a3c 0%, black 100%); }
-  h1 a {
-    color: white; } }
+    background-color: #222;
+    color: #fff; }
+    body div.header {
+      background: -webkit-gradient(linear, left bottom, left top, from(#020a3c), to(black));
+      background: linear-gradient(0deg, #020a3c 0%, black 100%); }
+    body article h1 a {
+      color: #fff !important; } }
 
 .header {
-  background: -webkit-gradient(linear, left bottom, left top, from(#1464ff), to(#00001e));
-  background: linear-gradient(0deg, #1464ff 0%, #00001e 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1464ff), to(#000042));
+  background: linear-gradient(0deg, #1464ff 0%, #000042 100%);
   color: white;
   padding: 0.5em; }
   .header h1 {
     text-align: center; }
   .header a {
-    color: inherit;
+    color: inherit !important;
     text-decoration: inherit; }
+    .header a img {
+      vertical-align: middle; }
 
 .nav {
   list-style: none;
@@ -32,24 +34,48 @@ body {
   .nav a {
     text-decoration: none; }
 
+.tags {
+  margin: 4px 0; }
+
 .tag {
-  margin: 0.5em;
-  border: 2px solid DodgerBlue;
-  border-radius: 5px;
-  background-color: LightBlue;
-  color: inherit;
-  text-decoration: inherit; }
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 8px;
+  padding: 1px;
+  margin: 0 4px; }
+  .tag:first-child {
+    margin-left: 0; }
+  .tag:last-child {
+    margin-right: 0; }
+  .tag a {
+    text-decoration: none;
+    color: #666 !important; }
+
+a:link {
+  color: dodgerblue; }
+
+a:visited {
+  color: royalblue; }
+
+a:hover {
+  color: lightblue; }
+
+a:active {
+  color: orange; }
 
 article {
-  margin-left: 10%;
-  margin-right: 10%; }
+  margin: 2% 10%;
+  padding: 5%; }
   article time {
     font-size: 1em;
     color: #777;
-    margin-bottom: 1em; }
+    margin: 4px 0;
+    display: inline-block; }
   article h1 a {
-    color: black;
+    color: #000;
     text-decoration: none; }
+  article p {
+    margin: 4px; }
   article img {
     margin-left: auto;
     margin-right: auto;

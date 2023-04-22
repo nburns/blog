@@ -1,6 +1,12 @@
+$background-regular: #fff;
+$text-regular: #000;
+
+$background-dark: #222;
+$text-dark: #fff;
+
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: $background-regular;
+  color: $text-regular;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -10,24 +16,24 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #fff;
-    background-color: #222;
-  }
+    background-color: $background-dark;
+    color: $text-dark;
 
-  div.header {
-    background: linear-gradient(0deg, rgb(2,10,60) 0%, rgb(0,0,0) 100%);
-  }
-
-  h1 {
-    a {
-      color: white;
+    div.header {
+      background: linear-gradient(0deg, rgb(2, 10, 60) 0%, rgb(0, 0, 0) 100%);
+    }
+    article {
+      h1 {
+        a {
+          color: $text-dark !important;
+        }
+      }
     }
   }
-
 }
 
 .header {
-  background: linear-gradient(0deg, rgb(20,100,255) 0%, rgb(0,0,30) 100%);
+  background: linear-gradient(0deg, rgb(20, 100, 255) 0%, rgb(0, 0, 66) 100%);
 
   color: white;
 
@@ -38,8 +44,11 @@ body {
   }
 
   a {
-    color: inherit;
+    color: inherit !important;
     text-decoration: inherit;
+    img  {
+      vertical-align: middle;
+    }
   }
 }
 
@@ -53,31 +62,51 @@ body {
   }
 }
 
+.tags {
+  margin: 4px 0;
+}
 .tag {
-  margin: 0.5em;
-  border: 2px solid DodgerBlue;
-  border-radius: 5px;
-  background-color: LightBlue;
-  color: inherit;
-  text-decoration: inherit;
+  color: #666;
+  border: 1px solid #666;
+  border-radius: 8px;
+  padding: 1px;
+  margin: 0 4px;
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+  a {
+    text-decoration: none;
+    color: #666 !important;
+  }
 }
 
+a:link { color: dodgerblue; }
+a:visited { color: royalblue; }
+a:hover { color: lightblue; }
+a:active { color: orange; }
+
 article {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 2% 10%;
+  padding: 5%;
 
   time {
     font-size: 1em;
     color: #777;
-    margin-bottom: 1em;
+    margin: 4px 0;
+    display: inline-block;
   }
 
   h1 {
     a {
-      color: black;
+      color: $text-regular;
       text-decoration: none;
     }
   }
+
+  p {
+    margin: 4px;
+  }
+
+
   img {
     margin-left: auto;
     margin-right: auto;

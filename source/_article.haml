@@ -7,5 +7,13 @@
   %time{datetime: article.date.iso8601}
     = article.date.strftime("%a %b %e, %Y")
 
+  %div.tags
+    - article.tags.each do |tag|
+      %span.tag
+        %a{href: tag_path(tag)}
+          = tag.pluralize
+
   = article.body
+
+
 
