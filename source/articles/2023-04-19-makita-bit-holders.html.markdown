@@ -19,16 +19,11 @@ I started by sketching out some ideas on paper, and making note of the dimension
     src="/2023/04/19/makita-bit-holders/bit-holder.glb"
     environment-image="legacy"
     auto-rotate
-    shadow-intensity="1" camera-controls touch-action="pan-y">
+    interaction-prompt="none"
+    shadow-intensity="1"
+    camera-controls>
 </model-viewer>
 
-<script>
-const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
-modelViewerParameters.addEventListener("load", (ev) => {
-  let material = modelViewerParameters.model.materials[0];
-  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.3, 0.8]);
-});
-</script>
 
 Once I had the design finalized, I exported the file and sent it to my 3D printer. I used a nice blue PLA filament, and printed it vertically so it wouldn't need supports (although it makes it less strong). I'll reassess if I manage to break it.
 

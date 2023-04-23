@@ -12,7 +12,7 @@
 <meta content='&lt;p&gt;As someone who does a lot of DIY work around the house, I found that my drill bits were constantly getting lost or misplaced. I needed a way to keep them organized and easily accessible. I wanted something that would help me avoid stuffing a handful...&lt;/p&gt;' property='og:description'>
 <meta content='https://blog.nick.burns.io/2023/04/19/makita-bit-holders/finished.jpg' property='og:image'>
 <script>
-  console.info('Last updated at 04/21/2023 22:54')
+  console.info('Last updated at 04/23/2023 00:15')
 </script>
 </head>
 <body>
@@ -68,16 +68,8 @@ STLs
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
-<model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" environment-image="legacy" auto-rotate="" shadow-intensity="1" camera-controls="" touch-action="pan-y">
+<model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" environment-image="legacy" auto-rotate="" interaction-prompt="none" shadow-intensity="1" camera-controls="">
 </model-viewer>
-
-<script>
-const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
-modelViewerParameters.addEventListener("load", (ev) => {
-  let material = modelViewerParameters.model.materials[0];
-  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.3, 0.8]);
-});
-</script>
 
 <p>Once I had the design finalized, I exported the file and sent it to my 3D printer. I used a nice blue PLA filament, and printed it vertically so it wouldn't need supports (although it makes it less strong). I'll reassess if I manage to break it.</p>
 

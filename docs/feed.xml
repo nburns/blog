@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html"/>
     <id>http://blog.nick.burns.io/2023/04/19/makita-bit-holders.html</id>
     <published>2023-04-19T08:35:00-07:00</published>
-    <updated>2023-04-20T17:47:35-07:00</updated>
+    <updated>2023-04-23T00:14:39-07:00</updated>
     <author>
       <name>Nick Burns</name>
     </author>
@@ -25,16 +25,8 @@
 
 &lt;script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"&gt;&lt;/script&gt;
 
-&lt;model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" environment-image="legacy" auto-rotate="" shadow-intensity="1" camera-controls="" touch-action="pan-y"&gt;
+&lt;model-viewer id="makita-bit-holder" src="/2023/04/19/makita-bit-holders/bit-holder.glb" environment-image="legacy" auto-rotate="" interaction-prompt="none" shadow-intensity="1" camera-controls=""&gt;
 &lt;/model-viewer&gt;
-
-&lt;script&gt;
-const modelViewerParameters = document.querySelector("model-viewer#makita-bit-holder");
-modelViewerParameters.addEventListener("load", (ev) =&gt; {
-  let material = modelViewerParameters.model.materials[0];
-  material.pbrMetallicRoughness.setBaseColorFactor([0, 0.3, 0.8]);
-});
-&lt;/script&gt;
 
 &lt;p&gt;Once I had the design finalized, I exported the file and sent it to my 3D printer. I used a nice blue PLA filament, and printed it vertically so it wouldn't need supports (although it makes it less strong). I'll reassess if I manage to break it.&lt;/p&gt;
 

@@ -76,14 +76,10 @@ article {
     text-decoration: none; }
   article p {
     margin: 4px; }
-  article img {
+  article img, article model-viewer {
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 66%; }
   article model-viewer {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 350px;
-    width: 66%; }
+    height: 20em; }
